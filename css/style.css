@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+section, aside{
+    padding: 20px;
+}
+
+aside{
+    width: 300px;
+    background-color: #2B8F82;
+    color: white;
+}
+aside h4{
+    margin: -10px 0;
+}
+img{
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+.img-wrapper{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #2B8F82;
+}
+nav li{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+span, progress{
+    display: inline-block;
+    float: right;
+    font-style: italic;
+
+}
+section h1{
+    margin: 30px 0 0 30px ;
+}
+.dotted-underline-text{
+    text-decoration: underline;
+}
+progress{
+    margin-right: 20%;
+    width: 50%;
+}
+.main-section p{
+    text-decoration: underline;
+}
+article, header h1{
+    margin: 0 20px;
+}
+article p{
+    line-height: 25px;
+}
+.tech {
+    font-weight: bolder;
+    font-size: larger;
+}
+#toTop{
+    display: none;
+    height: 40px;
+    width: 40px;
+    background-color: #2B8F82;
+    border-radius: 20%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+#toTop:hover{
+    height: 42px;
+    width: 42px;
+}
+.switch{
+    display: inline-block;
+    float: right;
+    font-style: normal;
+    font-weight: bold;
+}
+
+@media screen and (max-device-width: 800px){
+    body{
+        display: block;
+        padding: 0;
+    }
+    aside{
+        width: 100%;
+    }
+
+    img{
+        width: 30%;
+    }
+    a{
+        color: white;
+        font-size: larger;
+    }
+
+    .switch{
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 70px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: x-large;
+        color: white;
+    }
+
+}
+@media screen and (max-device-width: 900px){
+    span,progress{
+    display: block;
+    float: none;
+    }
+    progress{
+        width: 70%;
+        height: 20px;
+    }
+    body{
+        padding: 0 0 40px 0;
+    }
+
+
+
+}
